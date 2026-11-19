@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI (PS5)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-text">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies &middot; offline guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">Every official trophy, its guide in plain words with sources, a chapter-ordered road to the platinum — and a checklist that remembers what you have earned.</p>
+  </div>
+  <div class="progress-card" id="progressCard">
+    <div class="ring" id="ring" role="img" aria-label="Progress to platinum"><span id="ringText">0%</span></div>
+    <div class="progress-meta">
+      <p><strong id="earnedCount">0 of 55</strong> earned</p>
+      <p id="gradeCounts">1 platinum &middot; 2 gold &middot; 6 silver &middot; 46 bronze</p>
+      <p id="platinumLine">Platinum: Vice Got a Price! — not yet</p>
+      <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+    </div>
+  </div>
+</header>
+
+<section class="roadmap" id="roadmap">
+  <h2>Road to the platinum <span class="sub">— in chapter order</span></h2>
+  <p class="roadmap-note">No online trophies, no difficulty trophies, no mission replay and no New Game Plus. Keep a manual save at the start of every chapter (15 slots plus autosave) and one before the final mission. Cheats switch trophies and saving off. About 200 hours in total. Sources: Output Lag — GTA 6 Trophy List; Keengamer — GTA 6 Trophy Guide &amp; Platinum Roadmap.</p>
+  <ol class="steps" id="roadmapSteps"></ol>
+</section>
+
+<div class="toolbar" id="toolbar">
+  <input id="search" type="search" placeholder="Search a trophy or guide…" aria-label="Search trophies">
+  <div class="filters" id="kindFilters" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="active">All 55</button>
+    <button type="button" data-kind="story">Story</button>
+    <button type="button" data-kind="missable">⚠ Missable</button>
+    <button type="button" data-kind="collectibles">Collectibles</button>
+    <button type="button" data-kind="activities">Activities</button>
+    <button type="button" data-kind="platinum">Platinum</button>
+  </div>
+  <label class="tool">Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="tool check"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+  <label class="tool check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+  <button id="exportBtn" type="button">⬇ Export progress</button>
+  <label class="tool import">⬆ Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+  <button id="resetBtn" type="button">Reset</button>
+</div>
+
+<main class="layout">
+  <section class="list-col">
+    <p class="list-meta" id="listMeta"></p>
+    <ul class="trophy-list" id="trophyList"></ul>
+  </section>
+  <aside class="detail" id="detail" aria-live="polite"></aside>
+</main>
+
+<footer>
+  <p>Official names, descriptions and grades are shown as PlayStation publishes them. Guides are written for this guide in our own words and cite their sources beside each trophy — never copied from another guide. Sources: Output Lag, Keengamer, Exophase, Push Square, PSNProfiles. Works fully offline; progress is stored only in your browser.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
